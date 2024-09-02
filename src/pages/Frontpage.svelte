@@ -9,7 +9,7 @@
     PUBLIC_RESTAURANT_DINNER_TIME,
     PUBLIC_RESTAURANT_TEL,
     PUBLIC_RESTAURANT_FAX,
-  } from "$env/static/public";
+  } from "$lib/constants";
 
   import IndoorImage from "/src/assets/images/indoor.png";
   import OutdoorImage from "/src/assets/images/outdoor.png";

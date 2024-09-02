@@ -2,7 +2,7 @@
   import {
     PUBLIC_RESTAURANT_LUNCH_TIME,
     PUBLIC_RESTAURANT_DINNER_TIME,
-  } from "$env/static/public";
+  } from "$lib/constants";
 
   import ErtlImage from "/src/assets/images/ertl.png";
 </script>

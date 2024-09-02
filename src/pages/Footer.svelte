@@ -6,7 +6,7 @@
     PUBLIC_RESTAURANT_TEL,
     PUBLIC_RESTAURANT_FAX,
     PUBLIC_RESTAURANT_OWNER,
-  } from "$env/static/public";
+  } from "$lib/constants";
 
   import CustomWhiteImage from "/src/assets/images/custom-white-bg.jpg";
   import FacebookIcon from "/src/assets/icons/facebook.png";
