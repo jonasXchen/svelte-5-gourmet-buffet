@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/app.css */
+@font-face {
+    font-family: 'Cinzel';
+    src: url('/fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('/fonts/Overpass/Overpass-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
