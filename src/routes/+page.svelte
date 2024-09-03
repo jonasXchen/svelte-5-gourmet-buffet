@@ -1,5 +1,5 @@
 <script>
-  import Frontpage from "../pages/Frontpage.svelte";
+  import Header from "../pages/Header.svelte";
   import Food from "../pages/Food.svelte";
   import Facilities from "../pages/Facilities.svelte";
   import Directions from "../pages/Directions.svelte";
@@ -17,8 +17,8 @@
   <title>Asiatisches Restaurant - Gourmet Buffet</title>
 </svelte:head>
 
-<div class="flex flex-col items-center">
-  <Frontpage />
+<div class="flex flex-col items-center md:text-lg text-base">
+  <Header />
   <div class="flex flex-col max-w-[1080px]">
     <Food />
     <Facilities />
