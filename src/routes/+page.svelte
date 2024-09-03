@@ -17,7 +17,7 @@
   <title>Asiatisches Restaurant - Gourmet Buffet</title>
 </svelte:head>
 
-<div class="flex flex-col items-center md:text-lg text-base">
+<div class="flex flex-col items-center">
   <Header />
   <div class="flex flex-col max-w-[1080px]">
     <Food />
