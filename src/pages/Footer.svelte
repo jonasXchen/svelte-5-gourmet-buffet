@@ -13,7 +13,7 @@
 </script>
 
 <div
-  class="flex flex-col items-center mt-20 py-24 gap-8 w-full"
+  class="flex flex-col items-center w-full gap-8 py-24 mt-20"
   style="background-image: url('{CustomWhiteImage}');"
 >
   <!-- Icon -->
@@ -23,12 +23,12 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={FacebookIcon} alt="Facebook" class="h-8 object-cover" />
+      <img src={FacebookIcon} alt="Facebook" class="object-cover h-8" />
     </a>
   </div>
   <div class="flex flex-col items-center">
     <!-- Restaurant Name and Address -->
-    <div class="text-primary font-semibold">{PUBLIC_RESTAURANT_NAME}</div>
+    <div class="font-semibold text-primary">{PUBLIC_RESTAURANT_NAME}</div>
     <div>{PUBLIC_RESTAURANT_STREET}</div>
     <div>{PUBLIC_RESTAURANT_CITY}</div>
 
@@ -46,5 +46,13 @@
     {#if PUBLIC_RESTAURANT_OWNER}
       <div>Inhaber: {PUBLIC_RESTAURANT_OWNER}</div>
     {/if}
+  </div>
+  <div class="flex flex-row gap-3 underline">
+    <a href="/impressum" target="_blank" rel="noopener noreferrer">
+      Impressum
+    </a>
+    <a href="/datenschutz" target="_blank" rel="noopener noreferrer">
+      Datenschutz
+    </a>
   </div>
 </div>
