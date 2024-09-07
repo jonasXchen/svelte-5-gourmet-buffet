@@ -27,10 +27,10 @@
   ];
 </script>
 
-<div class="bg-white flex flex-col w-full gap-8 pb-6">
+<div class="flex flex-col w-full gap-8 pb-6 bg-white">
   <!-- Image Carousell -->
   <div class="relative flex w-full">
-    <ImageCarousel carouselClass="h-full w-full" {images} />
+    <ImageCarousel carouselClass="h-full w-full max-h-[680px]" {images} />
     <div
       class="absolute -bottom-1 left-0 bg-white [clip-path:polygon(0%_0%,100%_90%,100%_100%,0%_100%)] w-full h-1/5 opacity-35"
     ></div>
@@ -41,13 +41,13 @@
 
   <!-- Restaurant Name -->
   <div
-    class="text-balance flex w-full font-semibold text-3xl text-blue justify-center text-primary items-center font-cinzel"
+    class="flex items-center justify-center w-full text-3xl font-semibold text-balance text-blue text-primary font-cinzel"
   >
     <span class="tracking-widest">{PUBLIC_RESTAURANT_NAME}</span>
   </div>
 
   <!-- Address & Opening Hours -->
-  <div class="flex flex-col w-full justify-center items-center gap-4">
+  <div class="flex flex-col items-center justify-center w-full gap-4">
     <!-- Restarant Street & City -->
     <div class="flex flex-col items-center">
       <p>
@@ -69,7 +69,7 @@
       {/if}
     </div>
   </div>
-  <div class="flex flex-col w-full justify-center items-center gap-0">
+  <div class="flex flex-col items-center justify-center w-full gap-0">
     <!-- Opening Days -->
     <p class="font-semibold">{PUBLIC_RESTAURANT_OPENING_DAYS}</p>
     <!-- Lunch Time -->
