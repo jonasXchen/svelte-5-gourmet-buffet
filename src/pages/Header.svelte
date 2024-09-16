@@ -1,14 +1,14 @@
 <script>
   import {
-    PUBLIC_RESTAURANT_NAME,
-    PUBLIC_RESTAURANT_STREET,
-    PUBLIC_RESTAURANT_CITY,
-    PUBLIC_RESTAURANT_OPENING_DAYS,
-    PUBLIC_RESTAURANT_CLOSING_DAYS,
-    PUBLIC_RESTAURANT_LUNCH_TIME,
-    PUBLIC_RESTAURANT_DINNER_TIME,
-    PUBLIC_RESTAURANT_TEL,
-    PUBLIC_RESTAURANT_FAX,
+    PUBLIC_ENTITY_NAME,
+    PUBLIC_ENTITY_STREET,
+    PUBLIC_ENTITY_CITY,
+    PUBLIC_ENTITY_OPENING_DAYS,
+    PUBLIC_ENTITY_CLOSING_DAYS,
+    PUBLIC_ENTITY_LUNCH_TIME,
+    PUBLIC_ENTITY_DINNER_TIME,
+    PUBLIC_ENTITY_TEL,
+    PUBLIC_ENTITY_FAX,
   } from "$lib/constants";
 
   import IndoorImage from "/src/assets/images/indoor.png";
@@ -43,7 +43,7 @@
   <div
     class="flex items-center justify-center w-full text-3xl font-semibold text-balance text-blue text-primary font-cinzel"
   >
-    <span class="tracking-widest">{PUBLIC_RESTAURANT_NAME}</span>
+    <span class="tracking-widest">{PUBLIC_ENTITY_NAME}</span>
   </div>
 
   <!-- Address & Opening Hours -->
@@ -51,40 +51,40 @@
     <!-- Restarant Street & City -->
     <div class="flex flex-col items-center">
       <p>
-        {PUBLIC_RESTAURANT_STREET}
+        {PUBLIC_ENTITY_STREET}
       </p>
       <p>
-        {PUBLIC_RESTAURANT_CITY}
+        {PUBLIC_ENTITY_CITY}
       </p>
     </div>
 
     <div class="flex flex-col items-center">
       <!-- Restaurant Tel -->
-      {#if PUBLIC_RESTAURANT_TEL}
-        <p>Tel: {PUBLIC_RESTAURANT_TEL}</p>
+      {#if PUBLIC_ENTITY_TEL}
+        <a href="tel:{PUBLIC_ENTITY_TEL}">Tel: {PUBLIC_ENTITY_TEL}</a>
       {/if}
       <!-- Restaurant Fax -->
-      {#if PUBLIC_RESTAURANT_FAX}
-        <p>Fax: {PUBLIC_RESTAURANT_FAX}</p>
+      {#if PUBLIC_ENTITY_FAX}
+        <p>Fax: {PUBLIC_ENTITY_FAX}</p>
       {/if}
     </div>
   </div>
   <div class="flex flex-col items-center justify-center w-full gap-0">
     <!-- Opening Days -->
-    <p class="font-semibold">{PUBLIC_RESTAURANT_OPENING_DAYS}</p>
+    <p class="font-semibold">{PUBLIC_ENTITY_OPENING_DAYS}</p>
     <!-- Lunch Time -->
-    {#if PUBLIC_RESTAURANT_LUNCH_TIME}
-      <p>{PUBLIC_RESTAURANT_LUNCH_TIME}</p>
+    {#if PUBLIC_ENTITY_LUNCH_TIME}
+      <p>{PUBLIC_ENTITY_LUNCH_TIME}</p>
     {/if}
     <!-- Dinner Time -->
-    {#if PUBLIC_RESTAURANT_DINNER_TIME}
-      <p>{PUBLIC_RESTAURANT_DINNER_TIME}</p>
+    {#if PUBLIC_ENTITY_DINNER_TIME}
+      <p>{PUBLIC_ENTITY_DINNER_TIME}</p>
     {/if}
     <!-- Opening during holidays -->
     <p>auch an Feiertagen geöffnet</p>
     <!-- Closing Days -->
-    {#if PUBLIC_RESTAURANT_CLOSING_DAYS}
-      <p class="font-semibold">{PUBLIC_RESTAURANT_CLOSING_DAYS}</p>
+    {#if PUBLIC_ENTITY_CLOSING_DAYS}
+      <p class="font-semibold">{PUBLIC_ENTITY_CLOSING_DAYS}</p>
     {/if}
   </div>
 </div>

@@ -1,11 +1,11 @@
 <script>
   import {
-    PUBLIC_RESTAURANT_NAME,
-    PUBLIC_RESTAURANT_STREET,
-    PUBLIC_RESTAURANT_CITY,
-    PUBLIC_RESTAURANT_TEL,
-    PUBLIC_RESTAURANT_FAX,
-    PUBLIC_RESTAURANT_OWNER,
+    PUBLIC_ENTITY_NAME,
+    PUBLIC_ENTITY_STREET,
+    PUBLIC_ENTITY_CITY,
+    PUBLIC_ENTITY_TEL,
+    PUBLIC_ENTITY_FAX,
+    PUBLIC_ENTITY_OWNER,
   } from "$lib/constants";
 
   import CustomWhiteImage from "/src/assets/images/custom-white-bg.jpg";
@@ -28,24 +28,27 @@
   </div>
   <div class="flex flex-col items-center">
     <!-- Restaurant Name and Address -->
-    <div class="font-semibold text-primary">{PUBLIC_RESTAURANT_NAME}</div>
-    <div>{PUBLIC_RESTAURANT_STREET}</div>
-    <div>{PUBLIC_RESTAURANT_CITY}</div>
+    <div class="font-semibold text-primary">{PUBLIC_ENTITY_NAME}</div>
 
-    <!-- Restaurant Tel -->
-    {#if PUBLIC_RESTAURANT_TEL}
-      <div>Tel: {PUBLIC_RESTAURANT_TEL}</div>
-    {/if}
+    <div class="flex flex-col items-center text-sm font-thin">
+      <div>{PUBLIC_ENTITY_STREET}</div>
+      <div>{PUBLIC_ENTITY_CITY}</div>
 
-    <!-- Restaurant Fax -->
-    {#if PUBLIC_RESTAURANT_FAX}
-      <div>Fax: {PUBLIC_RESTAURANT_FAX}</div>
-    {/if}
+      <!-- Restaurant Tel -->
+      {#if PUBLIC_ENTITY_TEL}
+        <a href="tel:{PUBLIC_ENTITY_TEL}">Tel: {PUBLIC_ENTITY_TEL}</a>
+      {/if}
 
-    <!-- Restaurant Owner -->
-    {#if PUBLIC_RESTAURANT_OWNER}
-      <div>Inhaber: {PUBLIC_RESTAURANT_OWNER}</div>
-    {/if}
+      <!-- Restaurant Fax -->
+      {#if PUBLIC_ENTITY_FAX}
+        <div>Fax: {PUBLIC_ENTITY_FAX}</div>
+      {/if}
+
+      <!-- Restaurant Owner -->
+      {#if PUBLIC_ENTITY_OWNER}
+        <div>Inhaber: {PUBLIC_ENTITY_OWNER}</div>
+      {/if}
+    </div>
   </div>
   <div class="flex flex-row gap-3 underline">
     <a href="/impressum" target="_blank" rel="noopener noreferrer">
